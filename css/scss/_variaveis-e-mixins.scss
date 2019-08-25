@@ -1,0 +1,79 @@
+// Cores
+$bege-claro: #edece4;
+$bege-medio: #cbc6b9;
+$bege-escuro: #988c77;
+$cinza: #2a2426;
+$verde: #1ab912;
+
+// Fontes
+$fonte-1: 'PT Mono', monospace;
+$fonte-2: 'Aref Ruqaa', serif;
+
+@function em($pixel, $contexto: 16) {
+	@return $pixel / $contexto + em;
+}
+
+@mixin tipo-1($size) {
+	font-family: $fonte-1;
+	@if $size == 18 {
+		font-size: em(18);
+		line-height: em(30, 18);
+	}
+}
+
+@mixin tipo-2($size) {
+	font-family: $fonte-2;
+	@if $size == 18 {
+		font-size: em(18);
+		line-height: em(30, 18);
+	}
+	@else if $size == 24 {
+		font-size: em(24);
+		line-height: em(30, 24);
+	}
+}
+
+@mixin box-shadow($shadow...) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+//--------------------------------------------------
+//  MEDIA QUERIES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+@mixin media($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+// O exemplo abaixo mostra o `padding` e o `font-size` aumentando quando a largura da tela fica maior que 1024px.
+
+// .site-header {
+//     padding: 2rem;
+//     font-size: 1.8rem;
+//     @include mq('tablet-wide') {
+//         padding-top: 4rem;
+//         font-size: 2.4rem;
+//     }
+// }
+
+
+
