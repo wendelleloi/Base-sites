@@ -70,7 +70,7 @@ Para criar componentes CSS repare-os em modulos.
 Por exemplo: _footer.scss    
 e importe-os no styles.scss usando o comando @import 'footer'; sem o underline ( _ )    
 e seja feliz usando seu novo componente CSS!!          
-_Para mais exemplos, consulte a [Wiki][wiki]._    
+_Para mais exemplos, consulte a [Wiki][wiki]._  
     
 ## Configuração para Desenvolvimento
 
