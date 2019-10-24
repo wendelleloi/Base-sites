@@ -11,7 +11,8 @@ Projeto usando o Gulp.js como bundle manager a fim de tornar mais ágil o desenv
 
 Ele foi desenvolvido visto que o processo de desenvolvimento front-end em HTML e CSS puro, sem algum Package Manager, em algumas situações, no caso de um sistema com várias páginas e funcionalidades, tornava-se muito trabalhoso e repetitivo.  
 
-Nele foi implementado o gulp-sass como transpilador scss -> css a fim de tornar possível o uso de algumas funcionalidades, todas dependendo do desenvolvedor, como a separação em arquivos scss e compilado em um único final CSS, assim facilitando a manutenção e desenvolvimento do layout.   
+Nele foi implementado o gulp-sass como transpilador scss -> css a fim de tornar possível o uso de algumas funcionalidades, todas dependendo do desenvolvedor, como a separação em arquivos scss e compilado em um único final CSS, assim facilitando a manutenção e desenvolvimento do layout. 
+  
 Também foi implementado o gulp-concat a fim de tornar possível a concatenação de vários arquivos js em um único arquivo js, dessa forma tornando mais fácil futuras alterações em códigos javascript e manutenção.  
 
 Além de outras funcionalidades implementadas para facilitar e agilizar o desenvolvimento Front-End.  
