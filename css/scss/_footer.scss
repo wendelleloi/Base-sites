@@ -1,18 +1,38 @@
-footer {
-	padding: 20px 0;
-	background: $cinza;
-	@include box-shadow(0 0 0 10px $cinza);
-	p {
-		color: $bege-claro;
-		@include d(s) {
-			text-align: center;
-		}
-	}
-	a img {
-		float: right;
-		@include d(s) {
-			float: none;
-			margin: 20px auto;
-		}
-	}
-}
+// footer {
+// 	padding: 20px 0;
+// 	background: $cinza;
+// 	@include box-shadow(0 0 0 10px $cinza);
+// 	p {
+// 		color: $bege-claro;
+// 		@include d(s) {
+// 			text-align: center;
+// 		}
+// 	}
+// 	a img {
+// 		float: right;
+// 		@include d(s) {
+// 			float: none;
+// 			margin: 20px auto;
+// 		}
+// 	}
+// }
+
+  /* contato finalizado */
+
+  #footer {
+    background: #595959;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+  }
+  
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #ccc;
+  }

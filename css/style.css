@@ -1,15 +1,204 @@
 @charset "UTF-8";
+#contact {
+  background: var(--background-geral);
+  padding: 80px 0 40px 0;
+  margin-top: -50px;
+}
+
+#contact #google-map {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#contact .info {
+  color: #595959;
+}
+
+#contact .info i {
+  font-size: 32px;
+  color: #33b8e5;
+  float: left;
+}
+
+#contact .info p {
+  padding: 0 0 10px 50px;
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 17px;
+}
+
+#contact .info .email p {
+  padding-top: 5px;
+}
+
+#contact .social-links {
+  padding-bottom: 20px;
+}
+
+#contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #595959;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#contact .social-links a:hover {
+  background: #33b8e5;
+  color: #fff;
+}
+
+#contact .form #sendmessage {
+  color: #33b8e5;
+  border: 1px solid #33b8e5;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#contact .form input, #contact .form textarea {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 16px;
+}
+
+#contact .form button[type="submit"] {
+  background: #33b8e5;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#contact .form button[type="submit"]:hover {
+  background: #33b8e5;
+  cursor: pointer;
+}
+
+/*news letter*/
+form {
+  border: 4px solid #f1f1f1;
+}
+
+.newsletter {
+  border: solid 1px black;
+  padding: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.newsletter input[type=email], button {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.newsletter:hover input[type=email] {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.newsletter:hover button {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Style the input elements and the submit button */
+input[type=email], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.newsletter input, button {
+  min-height: 40px;
+}
+
+.newsletter h2, p {
+  display: block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #33b8e5;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .newsletter p {
+    margin-right: 100px;
+  }
+}
+
+/* contato finalizado */
+#footer {
+  background: #595959;
+  padding: 30px 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+}
+
 :root {
   --background-geral:#f2f2f2;
   --background-azul-claro:#33b8e5;
   --background-zap:#25D366;
   --background-branco:rgb(255, 255, 255);
   --background-cinza-escuro:#595959;
-}
-
-@font-face {
-  font-family: Antipasto;
-  src: url("Antipasto.TTF");
 }
 
 .car-posit {
@@ -53,38 +242,6 @@ h6 {
   padding: 0;
 }
 
-/* Botão voltar para o topo */
-.back-to-top {
-  position: fixed;
-  display: none;
-  background-color: #595959;
-  color: #fff;
-  padding: 6px 12px 9px 12px;
-  font-size: 16px;
-  border-radius: 2px;
-  right: 100px;
-  bottom: 30px;
-  -webkit-transition: background 0.5s;
-  transition: background 0.5s;
-}
-
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 30px;
-  }
-}
-
-.back-to-top:focus {
-  background-color: #595959;
-  color: #fff;
-  outline: none;
-}
-
-.back-to-top:hover {
-  background-color: #33b8e5;
-  color: #fff;
-}
-
 /* Header */
 #header {
   color: black;
@@ -96,6 +253,7 @@ h6 {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 997;
+  height: 150px;
 }
 
 #header #logo {
@@ -468,7 +626,7 @@ h6 {
 #nav-menu-container {
   float: right;
   /* margin: 10px; */
-  margin-top: -40px;
+  margin-top: 20px;
 }
 
 @media (max-width: 922px) {
@@ -989,83 +1147,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0 60px 0;
 }
 
-#team .card {
-  margin: 20px 0 20px 0;
-}
-
-#team .card img {
-  height: 250px;
-  max-width: 100%;
-}
-
-#team .card h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 20px;
-}
-
-#team .card span {
-  font-style: italic;
-  display: block;
-  font-size: 18px;
-  padding: 10px 0 0 0;
-}
-
-#team .card .social {
-  margin-top: 17px;
-  margin-bottom: 17px;
-}
-
-#team .card .social a {
-  color: #b3b3b3;
-}
-
-#team .card .social a:hover {
-  color: #595959;
-}
-
-#team .card .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-#team .container {
-  padding: 20px 16px;
-  text-align: center;
-}
-
-.card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .card img {
-    height: 250px;
-  }
-}
-
-#representantes .container {
-  padding: 20px 16px;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  #representantes .card {
-    margin: 20px 0 20px 0;
-  }
-  #team .card {
-    margin: 20px 0 20px 0;
-  }
-}
-
 .owl-dots {
   color: #000;
 }
@@ -1074,51 +1155,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #noticias {
   background: var(--background-cinza-escuro);
   padding: 80px 0 60px 0;
-}
-
-#noticias .card {
-  margin: 20px 0 20px 0;
-}
-
-#noticias .card img {
-  height: 250px;
-  max-width: 100%;
-}
-
-#noticias .card h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 20px;
-}
-
-#noticias .card span {
-  font-style: italic;
-  display: block;
-  font-size: 18px;
-  padding: 10px 0 0 0;
-}
-
-#noticias .card .social {
-  margin-top: 17px;
-  margin-bottom: 17px;
-}
-
-#noticias .card .social a {
-  color: #b3b3b3;
-}
-
-#noticias .card .social a:hover {
-  color: #595959;
-}
-
-#noticias .card .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-#noticias .container {
-  padding: 20px 16px;
-  text-align: center;
 }
 
 /* noticias FINIALIZADO*/
@@ -1491,58 +1527,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#representantes .card {
-  margin: 20px 0 20px 0;
-}
-
-#representantes .card img {
-  max-width: 100%;
-  max-height: 250px;
-}
-
-#representantes .card h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 20px;
-}
-
-#representantes .card span {
-  font-style: italic;
-  display: block;
-  font-size: 18px;
-  padding: 10px 0 0 0;
-}
-
-#representantes .card .social {
-  margin-top: 17px;
-  margin-bottom: 17px;
-}
-
-#representantes .card .social a {
-  color: #b3b3b3;
-}
-
-#representantes .card .social a:hover {
-  color: #595959;
-}
-
-#representantes .card .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
 #representantes .container {
   padding: 20px 16px;
   text-align: center;
@@ -1570,262 +1554,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
-#perfil-representantes .card {
-  margin: 20px 0 20px 0;
-}
-
-#perfil-representantes .card img {
-  max-width: 100%;
-  max-height: 250px;
-}
-
-#perfil-representantes .card h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 20px;
-}
-
-#perfil-representantes .card span {
-  font-style: italic;
-  display: block;
-  font-size: 18px;
-}
-
-#perfil-representantes .card .social {
-  margin-bottom: 10px;
-}
-
-#perfil-representantes .card .social a {
-  color: #b3b3b3;
-}
-
-#perfil-representantes .card .social a:hover {
-  color: #595959;
-}
-
-#perfil-representantes .card .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-#perfil-representantes .container {
-  padding: 20px 16px;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  #perfil-representantes .card {
-    margin: 20px 0 20px 0;
-  }
-}
-
 /*perfil de representantes finalizado*/
-#contact {
-  background: var(--background-geral);
-  padding: 80px 0 40px 0;
-  margin-top: -50px;
-}
-
-#contact #google-map {
-  height: 300px;
-  margin-bottom: 20px;
-}
-
-#contact .info {
-  color: #595959;
-}
-
-#contact .info i {
-  font-size: 32px;
-  color: #33b8e5;
-  float: left;
-}
-
-#contact .info p {
-  padding: 0 0 10px 50px;
-  margin-bottom: 20px;
-  line-height: 22px;
-  font-size: 17px;
-}
-
-#contact .info .email p {
-  padding-top: 5px;
-}
-
-#contact .social-links {
-  padding-bottom: 20px;
-}
-
-#contact .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #595959;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#contact .social-links a:hover {
-  background: #33b8e5;
-  color: #fff;
-}
-
-#contact .form #sendmessage {
-  color: #33b8e5;
-  border: 1px solid #33b8e5;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
-  display: block;
-}
-
-#contact .form .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-#contact .form input, #contact .form textarea {
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  font-size: 16px;
-}
-
-#contact .form button[type="submit"] {
-  background: #33b8e5;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-#contact .form button[type="submit"]:hover {
-  background: #33b8e5;
-  cursor: pointer;
-}
-
-/* contato finalizado */
-#footer {
-  background: #595959;
-  padding: 30px 0;
-  color: #fff;
-  font-size: 16px;
-}
-
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 16px;
-  color: #ccc;
-}
-
-/*news letter*/
-form {
-  border: 4px solid #f1f1f1;
-}
-
-.newsletter {
-  border: solid 1px black;
-  padding: 10px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.newsletter input[type=email], button {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.newsletter:hover input[type=email] {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.newsletter:hover button {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Style the input elements and the submit button */
-input[type=email], input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.newsletter input, button {
-  min-height: 40px;
-}
-
-.newsletter h2, p {
-  display: block;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: #33b8e5;
-  color: white;
-  border: none;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
-}
-
-@media (max-width: 500px) {
-  .newsletter p {
-    margin-right: 100px;
-  }
-}
-
 /*modal*/
 /* Modal */
 /* background do modal*/
@@ -2166,4 +1895,106 @@ input[type=submit]:hover {
 
 .owl-dots button:focus {
   outline: none !important;
+}
+
+.card {
+  margin: 20px 0 20px 0;
+}
+
+.card img {
+  height: 250px;
+  max-width: 100%;
+}
+
+.card h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.card span {
+  font-style: italic;
+  display: block;
+  font-size: 18px;
+  padding: 10px 0 0 0;
+}
+
+.card .social {
+  margin-top: 17px;
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.card .social a {
+  color: #b3b3b3;
+}
+
+.card .social a:hover {
+  color: #595959;
+}
+
+.card .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.card .container {
+  padding: 20px 16px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 20px 0 20px 0;
+  }
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Botão voltar para o topo */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background-color: #595959;
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 100px;
+  bottom: 30px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 30px;
+  }
+}
+
+.back-to-top:focus {
+  background-color: #595959;
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background-color: #33b8e5;
+  color: #fff;
 }

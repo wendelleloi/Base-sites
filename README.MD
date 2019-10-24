@@ -4,7 +4,7 @@
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]    
-[![Boostrap version][boostrap]][bootstrap-url] - v4.3.1
+[![Boostrap Version][boostrap-image]][bootstrap-url] - v4.3.1
 
 Versões de alguns frameworks ou modulo de gerênciamento de pacotes.
 
@@ -19,26 +19,21 @@ src
 │   └── scss --> arquivos compilados para CSS    
 ├── index.html    
 ├── img        
-├── gulpfile.js --> tarefas Gulp.js    
+├── gulpfile.js --> tarefas Gulp.js  
+├── lib --> arquivos e códigos de terceiros  
+├── .gitignore --> lista de arquivos que serão ignorados pelo git  
+├── package.json --> arquivo de configuração e dependências do projeto  
     
 ## Instalação
-
-OS X & Linux:
 
 ```sh
 npm install 
 ```
 
-Windows:
-
-```sh
-edit autoexec.bat
-```
-
 ## Obter repositório
 
 ```sh
-git clone https://github.com/NomeUsuario/NomeRepositorio.git
+git clone https://github.com/wendelleloi/Base-sites.git
 ```
 
 ## Comandos git úteis
@@ -70,9 +65,7 @@ _Para mais exemplos, consulte a [Wiki][wiki]._
     
 ## Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-1. Clone o repósitio na sua pasta, entre na pasta do arquivo, execute o comando npm install na pasta raiz do projeto para instalar todas as dependências do projeto.    
+1. Clone o repósitio na sua pasta, entre na pasta do arquivo, execute o comando npm install na pasta raiz do projeto, onde se encontra o arquivos 'package.json' para instalar todas as dependências do projeto.    
 2. ainda na pasta raiz do projeto, use o comando gulp no terminal para rodar o localhost na porta 3000 e ativar o live-loader.          
 
 ```sh
@@ -100,15 +93,15 @@ gulp
 
 ## Meta
 
-Seu Nome – [@SeuNome](https://twitter.com/...) – SeuEmail@exemplo.com
+Wendell Eloi da Silva – [@wendelleloi](https://github.com/wendelleloi) – wendelleloi2@gmail.com
 
 Distribuído sob a licença XYZ. Veja `LICENSE` para mais informações.
 
-[https://github.com/yourname/github-link](https://github.com/wendelleloi/)
+[https://github.com/wendelleloi](https://github.com/wendelleloi)
 
 ## Contributing
 
-1. Faça o _fork_ do projeto (<https://github.com/yourname/yourproject/fork>)
+1. Faça o _fork_ do projeto (https://github.com/wendelleloi/Base-sites>)
 2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
 3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
