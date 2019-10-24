@@ -4,13 +4,21 @@
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]    
-[![Boostrap Version][boostrap-image]][bootstrap-url] - v4.3.1
+<!-- [![Boostrap Version][boostrap-image]][bootstrap-url] - v4.3.1 -->
 
-Versões de alguns frameworks ou modulo de gerênciamento de pacotes.
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+Projeto usando o Gulp.js como bundle manager a fim de tornar mais ágil o desenvolvimento Front-End usando HTML, CSS e JavaScript.  
 
-![](./header.png)
+Ele foi desenvolvido visto que o processo de desenvolvimento front-end em HTML e CSS puro, sem algum Package Manager, em algumas situações, no caso de um sistema com várias páginas e funcionalidades, tornava-se muito trabalhoso e repetitivo.  
+
+Nele foi implementado o gulp-sass como transpilador scss -> css a fim de tornar possível o uso de algumas funcionalidades, todas dependendo do desenvolvedor, como a separação em arquivos scss e compilado em um único final CSS, assim facilitando a manutenção e desenvolvimento do layout.   
+Também foi implementado o gulp-concat a fim de tornar possível a concatenação de vários arquivos js em um único arquivo js, dessa forma tornando mais fácil futuras alterações em códigos javascript e manutenção.  
+
+Além de outras funcionalidades implementadas para facilitar e agilizar o desenvolvimento Front-End.  
+
+Nesse projeto foi utilizado a versão 10.16.3 do Nodejs e a versão 6.9.0 do NPM.  
+
+<!-- ![](./header.png) -->
    
 ## Estrutura do projeto
     
@@ -60,7 +68,7 @@ git pull - Atualizar os arquivos no branch atual
 Para criar componentes CSS repare-os em modulos.    
 Por exemplo: _footer.scss    
 e importe-os no styles.scss usando o comando @import 'footer'; sem o underline ( _ )    
-e seja feliz usando seu nome componente CSS!!          
+e seja feliz usando seu novo componente CSS!!          
 _Para mais exemplos, consulte a [Wiki][wiki]._    
     
 ## Configuração para Desenvolvimento
@@ -76,7 +84,7 @@ gulp
 
 ```
 
-## Histórico de lançamentos
+<!-- ## Histórico de lançamentos
 
 * 0.2.1
     * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
@@ -89,7 +97,7 @@ gulp
     * O primeiro lançamento adequado
     * MUDANÇA: Renomeia `foo()` para `bar()`
 * 0.0.1
-    * Trabalho em andamento
+    * Trabalho em andamento -->
 
 ## Meta
 
@@ -101,15 +109,16 @@ Distribuído sob a licença XYZ. Veja `LICENSE` para mais informações.
 
 ## Contributing
 
-1. Faça o _fork_ do projeto (https://github.com/wendelleloi/Base-sites>)
+1. Faça o _fork_ do projeto (<https://github.com/wendelleloi/Base-sites>)
 2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
 3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
 5. Crie um novo _Pull Request_
 
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-url]: https://www.npmjs.com/package/gulp
 [npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/seunome/seuprojeto/wiki
+[wiki]: https://github.com/wendelleloi/Base-sites/wiki
+
