@@ -20,6 +20,7 @@ Além de outras funcionalidades implementadas para facilitar e agilizar o desenv
 Nesse projeto foi utilizado a versão 10.16.3 do Nodejs e a versão 6.9.0 do NPM.  
 
 <!-- ![](./header.png) -->
+
    
 ## Estrutura do projeto
     
