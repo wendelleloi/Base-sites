@@ -1,10 +1,10 @@
 # Base_sites: :file_folder: Informações Gerais :file_folder:
 --------------------------------------------
-:trophy: Scrum Master: Wendell Eloi
-:anchor: Product Owner: Wendell Eloi
+:trophy: Scrum Master: Wendell Eloi  
+:anchor: Product Owner: Wendell Eloi  
 --------------------------------------------
-:hammer: DEV TEAM :hammer:
-- Nome do dev - [wendelleloi](https://github.com/wendelleloi)
+:hammer: DEV TEAM :hammer:  
+- [wendelleloi](https://github.com/wendelleloi)  
 <!-- - Nome do dev - [Git do Dev](https://NomeDoDev.github.io/)
 - Nome do dev - [Git do Dev](https://NomeDoDev.github.io/) -->
 
@@ -19,55 +19,55 @@
 - [x] Configurar tarefas Gulp;    
 - [x] Testar;      
 --------------------------------------------
-## BACK-END: 
-- Não possui;  
+<!-- ## BACK-END: 
+- Não possui;   -->
 <!-- - [x] Iniciar projeto;
 - [x] Criar modelo: Produto;
 - [x] Criar modelo: Categoria;
 - [x] Criar modelo: Banner;
 - [x] Criar modelo: Diferencial;
 - [x] Criar modelo: Parceiro; -->
---------------------------------------------
-## UX - UI: 
+<!-- -------------------------------------------- -->
+<!-- ## UX - UI:  -->
 <!-- - [x] Levantamento das informações que a empresa e o mercado têm sobre o desafio a ser solucionado.;
 - [x] Entrevistas com usuários/clientes reais do serviço;
 - [x] mockup;
 - [ ] Wireflows; -->
 
---------------------------------------------
-## HACKATHON 
+<!-- -------------------------------------------- -->
+<!-- ## HACKATHON  -->
 <!-- - [x] Exemplo de planilha que adiciona itens ao banco;
 - [ ] Modificar a planilha para que ela se relacione ao modelo de Produtos;
 - [ ] Ajustar o nome das colunas a serem lidas; -->
 
---------------------------------------------
+<!-- -------------------------------------------- -->
 ## VERSÃO 2:    
 
 ## FONT-END: 
-- [] Montar a estrutura da primeira tela;  
-- [] Começar o design;  
-- [] Separar o CSS em arquivos distintos;  
-- [] Separar o JS em arquivos distintos;  
-- [] Configurar tarefas Gulp;    
-- [] Testar;      
+- [ ] Montar a estrutura da primeira tela;  
+- [ ] Começar o design;  
+- [ ] Separar o CSS em arquivos distintos;  
+- [ ] Separar o JS em arquivos distintos;  
+- [ ] Configurar tarefas Gulp;    
+- [ ] Testar;      
 --------------------------------------------
-## BACK-END: 
-- Não possui;  
+<!-- ## BACK-END: 
+- Não possui;   -->
 <!-- - [x] Iniciar projeto;
 - [x] Criar modelo: Produto;
 - [x] Criar modelo: Categoria;
 - [x] Criar modelo: Banner;
 - [x] Criar modelo: Diferencial;
 - [x] Criar modelo: Parceiro; -->
---------------------------------------------
-## UX - UI: 
+<!-- -------------------------------------------- -->
+<!-- ## UX - UI:  -->
 <!-- - [x] Levantamento das informações que a empresa e o mercado têm sobre o desafio a ser solucionado.;
 - [x] Entrevistas com usuários/clientes reais do serviço;
 - [x] mockup;
 - [ ] Wireflows; -->
 
---------------------------------------------
-## HACKATHON 
+<!-- -------------------------------------------- -->
+<!-- ## HACKATHON  -->
 <!-- - [x] Exemplo de planilha que adiciona itens ao banco;
 - [ ] Modificar a planilha para que ela se relacione ao modelo de Produtos;
 - [ ] Ajustar o nome das colunas a serem lidas; -->
