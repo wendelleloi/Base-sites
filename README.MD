@@ -71,18 +71,18 @@ git pull - Atualizar os arquivos no branch atual
 
 ## Exemplo de uso
 
-- Para criar componentes CSS repare-os em modulos.    
+- Para criar componentes CSS separe-os em modulos.    
 Por exemplo: _footer.scss    
   
 Importe-os no styles.scss usando o comando @import 'footer'; sem o underline ( _ )    
 e seja feliz usando seu novo componente CSS!!          
 _Para mais exemplos, consulte a [Wiki][wiki]._  
 
-- Para criar componentes .pug repare-os em arquivos diferentes.  
+- Para criar componentes .pug separe-os em arquivos diferentes.  
 Por exemplo: header.pug  
 
 Importe-o no index.pug usando o comando extends components/header.pug; usando o caminho relativo da pasta.  
-Não esqueça de olhar a documentação do [pug][https://pugjs.org/language/inheritance.html] para saber mais sobre importações de componentes, procure saber mais sobre o 'block'  
+Não esqueça de olhar a documentação do [pug][pug] para saber mais sobre importações de componentes, procure saber mais sobre o 'block'  
     
 ## Configuração para Desenvolvimento
 
