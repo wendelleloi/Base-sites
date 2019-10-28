@@ -1,5 +1,5 @@
 # Base para sites
-> Projeto destinado para ser a base de todos os projetos HTML/ CSS/ JavaScript usando o Sass e Gulp.js.
+> Projeto destinado para ser a base de todos os projetos HTML/ CSS/ JavaScript usando o Sass, Pug, Gulp.js.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -14,7 +14,9 @@ Ele foi desenvolvido visto que o processo de desenvolvimento front-end em HTML e
 Nele foi implementado o gulp-sass como transpilador scss -> css a fim de tornar possível o uso de algumas funcionalidades, todas dependendo do desenvolvedor, como a separação em arquivos scss e compilado em um único final CSS, assim facilitando a manutenção e desenvolvimento do layout. 
   
 Também foi implementado o gulp-concat a fim de tornar possível a concatenação de vários arquivos js em um único arquivo js, dessa forma tornando mais fácil futuras alterações em códigos javascript e manutenção.  
-
+  
+Ainda foi implementado o Pug.js a fim de tornar o desenvolvimento do projeto em pug mais próximo aos frameworks, mas ainda assim mais simples que os mesmos, como exemplo, a criação de componentes, mixins e iterações.
+  
 Além de outras funcionalidades implementadas para facilitar e agilizar o desenvolvimento Front-End.  
 
 Nesse projeto foi utilizado a versão 10.16.3 do Nodejs e a versão 6.9.0 do NPM.  
@@ -32,6 +34,9 @@ src
 ├── lib --> arquivos e códigos de terceiros  
 ├── .gitignore --> lista de arquivos que serão ignorados pelo git  
 ├── package.json --> arquivo de configuração e dependências do projeto  
+├── pug
+│   └── components --> componentes utilizados no projeto .pug  
+│   └── index.pug --> arquivo compilado para index.html        
     
 ## Instalação
 
@@ -52,7 +57,7 @@ git clone - Obter repositório.
 
 git status - checar o estado atual do repositório.
 
-git cheout [NomeDaBranch] - alterar branch do projeto
+git checkout [NomeDaBranch] - alterar branch do projeto
 
 git add . - adcionar todos os arquivos ao repositório
 
@@ -66,11 +71,18 @@ git pull - Atualizar os arquivos no branch atual
 
 ## Exemplo de uso
 
-Para criar componentes CSS repare-os em modulos.    
+- Para criar componentes CSS repare-os em modulos.    
 Por exemplo: _footer.scss    
-e importe-os no styles.scss usando o comando @import 'footer'; sem o underline ( _ )    
+  
+Importe-os no styles.scss usando o comando @import 'footer'; sem o underline ( _ )    
 e seja feliz usando seu novo componente CSS!!          
 _Para mais exemplos, consulte a [Wiki][wiki]._  
+
+- Para criar componentes .pug repare-os em arquivos diferentes.  
+Por exemplo: header.pug  
+
+Importe-o no index.pug usando o comando extends components/header.pug; usando o caminho relativo da pasta.  
+Não esqueça de olhar a documentação do [pug][https://pugjs.org/language/inheritance.html] para saber mais sobre importações de componentes, procure saber mais sobre o 'block'  
     
 ## Configuração para Desenvolvimento
 
@@ -122,4 +134,5 @@ Distribuído sob a licença XYZ. Veja `LICENSE` para mais informações.
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [wiki]: https://github.com/wendelleloi/Base-sites/wiki
+[pug]: https://pugjs.org/language/inheritance.html
 
