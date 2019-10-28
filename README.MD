@@ -34,7 +34,7 @@ src
 ├── lib --> arquivos e códigos de terceiros  
 ├── .gitignore --> lista de arquivos que serão ignorados pelo git  
 ├── package.json --> arquivo de configuração e dependências do projeto  
-├── pug
+├── pug  
 │   └── components --> componentes utilizados no projeto .pug  
 │   └── index.pug --> arquivo compilado para index.html        
     
