@@ -1,0 +1,26 @@
+block content
+	footer#footer
+		.container
+			.copyright
+				| © Copyright 
+				strong G | nucleus
+				| . Todos os direitos reservados.
+			.credits
+				| Projetado por 
+				a(href='http://www.ejectufrn.com.br/', target='_blank') EJECT
+// Botão voltar para o topo FINALIZADO
+a.back-to-top(href='#')
+	i.fa.fa-chevron-up
+// Libraries JS
+script.
+	//- app.use("/js", express.static(path.join(__dirname, "js")))
+	//- app.use(express.static(__dirname + '/js'));
+script(src='/lib/jquery/jquery.min.js')
+script(src='/lib/jquery/jquery-migrate.min.js')
+script(src='/lib/easing/easing.min.js')
+script(src='/lib/wow/wow.min.js')
+script(src='/lib/waypoints/waypoints.min.js')
+script(src='/lib/superfish/hoverIntent.js')
+script(src='/lib/superfish/superfish.min.js')
+script(src='/js/main.js')
+

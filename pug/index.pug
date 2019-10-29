@@ -1,8 +1,7 @@
-extends components/header.pug
-
-block content  
- .row
-   .col-md-3
-     nav
-   .col-md-9
-     h1 teste
+doctype html
+html(lang="pt-br") 
+  include components/header.pug
+  body
+    h1 My Site
+    p Welcome to my super lame site.
+    include components/footer.pug

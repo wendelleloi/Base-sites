@@ -37,7 +37,7 @@ function compilaSass() {
     browsers: ['last 2 versions'],
     cascade: false
   }))
-  .pipe(gulp.dest('css/'))
+  .pipe(gulp.dest('html/css'))
   .pipe(browserSync.stream());
 }
 
@@ -56,7 +56,7 @@ function gulpJS() {
     presets: ['env']
   }))
   .pipe(uglify())
-  .pipe(gulp.dest('js/'))
+  .pipe(gulp.dest('html/js/'))
   .pipe(browserSync.stream())
 }
 
