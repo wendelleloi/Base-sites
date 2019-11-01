@@ -1,7 +1,9 @@
 doctype html
 html(lang="pt-br") 
   include components/header.pug
-  body
-    h1 My Site
-    p Welcome to my super lame site.
+  body#cab
+    include components/navbar.pug
+    //- include components/hero.pug
+    include components/sobre.pug
+    include components/contato.pug
     include components/footer.pug

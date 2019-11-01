@@ -63,7 +63,7 @@ h6 {
     right: 0;
     transition: all 0.5s;
     z-index: 997;
-    // background-color: #000; normalmente é transparente
+    background-color: #000;
     height: 150px;
 }
 
@@ -823,7 +823,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #sobre .sobre-container .background {
     min-height: 500px;
     /* background: url(../img/nucleus-logo3.png) no-repeat; */
-    background: url(../img/nucleus-logo.png) no-repeat;
+    // background: url(../img/nucleus-logo.png) no-repeat;
     background-position: center;
     margin-bottom: 10px;
 }
