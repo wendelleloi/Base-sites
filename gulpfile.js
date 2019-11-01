@@ -8,6 +8,21 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 var pug = require('gulp-pug');
 
+// Variáveis
+// Options for development
+var DevOptions = {
+  outputStyle: 'expanded' // expanded para modo normal, em cascata
+}
+
+// caminhos
+var scssFiles = 'css/scss/**/*.scss';
+
+// Options for development
+var ProdOptions = {
+  outputStyle: 'compressed' // compressed para ficar em line 
+}
+// Fim variáveis 
+
 // Função para compilar o Pug
 function CompilaPug() {
   return gulp 
@@ -29,10 +44,8 @@ gulp.task('pug', function(done){
 // Funçao para compilar o SASS e adicionar os prefixos
 function compilaSass() {
   return gulp
-  .src('css/scss/**/*.scss')
-  .pipe(sass({
-    outputStyle: 'expanded' // use compressed para ficar em line 
-  }))
+  .src(scssFiles)
+  .pipe(sass(DevOptions).on('error', sass.logError))
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
     cascade: false
