@@ -7,20 +7,28 @@ const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 var pug = require('gulp-pug');
+var gulpif = require('gulp-if');
+
+// Environment Setup
+var env = process.env.NODE_ENV;
+
+// Options for development
+var styleOutput = '';
+
+function DevOptions() {
+  if (env === 'development') {
+    return styleOutput = 'expanded';
+  } else {
+    return styleOutput = 'compressed';
+  }
+}
 
 // Variáveis
-// Options for development
-var DevOptions = {
-  outputStyle: 'expanded' // expanded para modo normal, em cascata
-}
+env === 'development' ? styleOutput = 'expanded' : 'compressed'
 
 // caminhos
 var scssFiles = 'css/scss/**/*.scss';
 
-// Options for development
-var ProdOptions = {
-  outputStyle: 'compressed' // compressed para ficar em line 
-}
 // Fim variáveis 
 
 // Função para compilar o Pug
@@ -45,7 +53,7 @@ gulp.task('pug', function(done){
 function compilaSass() {
   return gulp
   .src(scssFiles)
-  .pipe(sass(DevOptions).on('error', sass.logError))
+  .pipe(sass({outputStyle: DevOptions()}).on('error', sass.logError))
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
     cascade: false
@@ -68,7 +76,7 @@ function gulpJS() {
   .pipe(babel({
     presets: ['env']
   }))
-  .pipe(uglify())
+  .pipe(gulpif(env === 'production', uglify()))
   .pipe(gulp.dest('html/js/'))
   .pipe(browserSync.stream())
 }
