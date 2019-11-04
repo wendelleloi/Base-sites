@@ -1,0 +1,25 @@
+section#team
+  .container.wow.fadeInUp
+    .section-header
+      h3.section-title Equipe
+      p.section-description
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid
+        | error vero optio, voluptate facere.
+      - var values = [{name:'John Doe', span:'Lorem ipsum dolor.', img:'img/castelo.jpg'},{name:'John Doe', span:'Lorem ipsum dolor.', img:'img/castelo.jpg'},{name:'John Doe', span:'Lorem ipsum dolor.', img:'img/castelo.jpg'}]
+    .row
+      each val in values.length ? values : ['There are no values']
+        .col-lg-3.col-md-6
+          .card
+            img(src=val.img, alt='')
+            .container
+              h4
+                b= val.name
+              span= val.span
+            .social
+              a(href='#')
+                i.fa.fa-twitter
+              a(href='#')
+                i.fa.fa-facebook
+              a(href='#')
+                i.fa.fa-linkedin
+block content
