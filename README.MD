@@ -21,22 +21,26 @@ Além de outras funcionalidades implementadas para facilitar e agilizar o desenv
 
 Nesse projeto foi utilizado a versão 10.16.3 do Nodejs e a versão 6.9.0 do NPM.  
 
-<!-- ![](./header.png) -->
+![](./gulp.jpeg)
    
 ## Estrutura do projeto
     
 src  
 ├── css --> arquivos css    
 │   └── scss --> arquivos compilados para CSS    
-├── index.html    
-├── img        
+├── html --> pasta onde se encontra os arquivos finais e prontos para o backend      
+│   └── css --> pasta onde se encontra o style.css final  
+│   └── img --> pasta onde se encontra todas as imagens utilizada pelas páginas .html     
+│   └── js -->  pasta onde se encontra o main.js final                    
+│   └── lib -->  pasta onde se encontra arquivos de terceiros que são utilizadas pelas páginas .html     
+├── js --> pasta onde se encontram todos os arquivos .js que serão compilados            
 ├── gulpfile.js --> tarefas Gulp.js  
-├── lib --> arquivos e códigos de terceiros  
 ├── .gitignore --> lista de arquivos que serão ignorados pelo git  
 ├── package.json --> arquivo de configuração e dependências do projeto  
-├── pug  
+├── pug--> pasta onde se encontra os arquivos pug que serão compilados         
 │   └── components --> componentes utilizados no projeto .pug  
 │   └── index.pug --> arquivo compilado para index.html        
+│   └── outraPagina.pug --> arquivo compilado para outraPagina.html   
     
 ## Instalação
 
@@ -93,10 +97,24 @@ Não esqueça de olhar a documentação do [pug][pug] para saber mais sobre impo
 
 npm install    
 
-gulp
-
 ```
 
+3. O projeto possui dois scripts, um para o desenvolvimento e outro para produção
+- Para o desenvolvimento o arquivo CSS e JS finais são compilados em formato extendido, ou seja, ele é legível para outros desenvolvedores.      
+      
+```sh
+
+npm run gulp         
+
+```    
+    
+- Para a produção o arquivo CSS e JS finais são compilados em formato in line, ou seja, ele é inlegível para humanos, mas possui uma maior velocidade de leitura pelo browser.     
+     
+```sh
+
+npm run gulp-prod              
+
+```     
 <!-- ## Histórico de lançamentos
 
 * 0.2.1
