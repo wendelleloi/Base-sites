@@ -102,8 +102,19 @@ gulp.task('pluginjs', pluginJS);
 function browser() {
   browserSync.init({
     server: {
-      baseDir: "./html"
-    }
+      baseDir: "./html",
+      index: "index.html",
+      // middleware para testar futuramente requisições no lado do cliente
+      // middleware: [{
+      //   route: "/",
+      //   handle: (req, res, next) => {
+      //     res.writeHead(302,  { 'Location': '/index.html' })                                                                                                                                                                
+      //     res.end()
+      //     next()
+      //   }
+      // }]
+    },
+    startPath: `index.html`
   });
 }
 
