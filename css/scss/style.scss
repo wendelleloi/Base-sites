@@ -4,13 +4,23 @@
 // @import 'variaveis-e-mixins';
 // @import 'geral';
 
+// componentes
+@import 'button';
+@import 'card';
+
 // Partes
-// @import 'intro';
-// @import 'menu';
+@import 'intro';
+@import 'galeria';
 @import 'contato';
 @import 'footer';
 @import 'navbar';
-@import 'card';
-@import 'backToTop'
+@import 'backToTop';
+@import 'sobre';
+@import 'chamada';
+@import 'localizacao';
+@import 'team';
 
+
+//paleta
+@import 'paleta'
 

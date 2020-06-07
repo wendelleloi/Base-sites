@@ -3,24 +3,18 @@ block content
 		.container
 			.copyright
 				| © Copyright 
-				strong Base Sites
+				strong Landing page basic II
 				| . Todos os direitos reservados.
 			.credits
 				| Projetado por 
-				a(href='https://github.com/wendelleloi', target='_blank') Wendell Eloi
-// Botão voltar para o topo FINALIZADO
-a.back-to-top(href='#')
-	i.fa.fa-chevron-up
-// Libraries JS
+				a(href='#', target='_blank') TecHay
+	include backtotop.pug
+script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js')
 script.
-	//- app.use("/js", express.static(path.join(__dirname, "js")))
-	//- app.use(express.static(__dirname + '/js'));
-script(src='/lib/jquery/jquery.min.js')
-script(src='/lib/jquery/jquery-migrate.min.js')
-script(src='/lib/easing/easing.min.js')
-script(src='/lib/wow/wow.min.js')
-script(src='/lib/waypoints/waypoints.min.js')
-script(src='/lib/superfish/hoverIntent.js')
-script(src='/lib/superfish/superfish.min.js')
-script(src='/js/main.js')
+	new WOW().init();
+script(src='./js/main.js')
 

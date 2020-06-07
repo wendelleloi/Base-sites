@@ -10,12 +10,13 @@
   border-radius: 2px;
   right: 100px;
   bottom: 30px;
-  transition: background 0.5s;
+  transition: all 0.5s;
 }
 
 @media (max-width: 768px) {
   .back-to-top {
       bottom: 30px;
+      right: 20px;
   }
 }
 

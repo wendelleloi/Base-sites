@@ -1,0 +1,65 @@
+$verde: #1ab912;
+$azul: #007bff;
+.paleta_verde {
+  .back-to-top {
+    &:hover, &:active {
+      background-color: $verde !important;
+    }
+  }
+  #sobre {
+    a {
+      color: $verde;
+    }
+  }
+  #contact {
+    .info i {
+      color: $verde;
+    }
+    .social-links a {
+      &:hover {
+        background-color: $verde !important;
+      }
+    }
+    .contactForm {
+      button {
+        background-color: $verde;
+        &:hover {
+          background-color: $verde;
+          opacity: .5;
+        }
+      }
+    }
+  }
+}
+
+.paleta_azul {
+  .back-to-top {
+    &:hover, &:active {
+      background-color: $azul !important;
+    }
+  }
+  #sobre {
+    a {
+      color: $azul;
+    }
+  }
+  #contact {
+    .info i {
+      color: $azul;
+    }
+    .social-links a {
+      &:hover {
+        background-color: $azul !important;
+      }
+    }
+    .contactForm {
+      button {
+        background-color: $azul;
+        &:hover {
+          background-color: $azul;
+          opacity: .5;
+        }
+      }
+    }
+  }
+}

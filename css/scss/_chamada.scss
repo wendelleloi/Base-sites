@@ -1,0 +1,38 @@
+#chamada {
+    .bg-chamada {
+        background-image: url('../img/foto_bg_chamada.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        z-index: 1;
+        @media screen and (max-width: 767px) {
+            background: none;
+          }
+    }
+    .chamada-content {
+        z-index: 2;
+        height: 80vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        @media screen and (max-width: 767px) {
+            height: 100%;
+            margin-bottom: 20px;
+        }
+        .chamada-content-text {
+            max-width: 500px;
+            h4 {
+                opacity: .5;
+            }
+            @media screen and (max-width: 767px) {
+                width: 100%;
+              }
+        }
+        .chamada-content-button {
+            .button-main {
+                margin-top: 20px;
+            }
+        }
+    }
+}

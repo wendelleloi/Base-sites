@@ -4,42 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>landing page basic II</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./lib/animate/animate.min.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" type="text/css">
-    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="/lib/animate/animate.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" type="text/css">
+    <link rel="stylesheet" link="&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" crossorigin="anonymous" type="text/css">
     <link rel="shortcut icon" href="/img/favicon.ico">
   </head>
   <body id="cab">
-    <div id="nav-menu-container-top">
-      <ul class="nav-menu-top">
-        <li><a class="btn-calcule-nav" href="https://github.com/wendelleloi" target="_blank">Calcule sua parcela</a></li>
-        <li><a class="btn-zap-nav" href="http://api.whatsapp.com/send?1=pt_BR&amp;phone=5584994578751" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-      </ul>
+    <!-- The overlay-->
+    <div class="overlay" id="myNav">
+      <!-- Button to close the overlay navigation--><a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+      <!-- Overlay content-->
+      <div class="overlay-content"><a href="#">Início</a><a href="#sobre">Sobre Nós</a><a href="#galeria">Galeria</a><a href="#localizacao">Localização</a><a href="#team">Time</a><a href="#contact">Contato</a>
+        <div class="dropdown" id="paletas">
+          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Paletas</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item paleta" href="#" onclick="paleta(&quot;verde&quot;)">Paleta verde</a><a class="dropdown-item paleta" href="#" onclick="paleta(&quot;azul&quot;)">Paleta azul</a></div>
+        </div>
+      </div>
     </div>
-    <nav id="nav-menu-container">
-      <ul class="nav-menu">
-        <li class="menu-active"><a href="#cab">Início</a></li>
-        <li class="menu-has-children"><a href="#sobre">Quem somos</a>
-          <ul>
-            <li><a href="#depoimentos">Depoimentos</a></li>
-            <li><a href="#team">Equipe</a></li>
-            <li><a href="#parceiros">Parceiros e Clientes</a></li>
-            <li><a href="#apoio">Apoio e convênios</a></li>
-            <li><a href="#noticias">Notícias</a></li>
-          </ul>
-        </li>
-        <li class="menu-has-children"><a href="#perfil-representantes">Perfil de representantes</a>
-          <ul>
-            <li><a class="modBtn1" href="#">Seja um representante</a></li>
-          </ul>
-        </li>
-        <li><a href="#services">Áreas de atuação</a></li>
-        <li><a href="#contact">Localização e contato</a></li>
-      </ul>
+    <div class="overlay-nav scroll-overlay"><span class="button-overlay" onclick="openNav()"><i class="fas fa-bars"></i></span></div>
+    <!-- default nav-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="defalt-nav">
+      <div class="collapse navbar-collapse"><a class="navbar-brand" href="#">LOGO</a>
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#galeria">Galeria</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#localizacao">localização</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#team">Time</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#contact">Contato</a></li>
+          <li class="nav-item">
+            <div class="dropdown" id="paletas">
+              <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Paletas</button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item paleta" href="#" onclick="paleta(&quot;verde&quot;)">Paleta verde</a><a class="dropdown-item paleta" href="#" onclick="paleta(&quot;azul&quot;)">Paleta azul</a></div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="button-main"><a href="#" title="">(84) 99499-9999</a></div>
+          </li>
+        </ul>
+      </div>
     </nav>
     <section id="hero">
       <div class="container-fluid">
@@ -47,34 +53,21 @@
       </div>
     </section>
     <section class="wow fadeInUp" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h3 class="section-title">Localização e contato</h3>
-          <p class="section-description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque
-          </p>
-        </div>
-      </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31727.846942493186!2d-35.22595483184908!3d-6.26624620971966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2879f0e9b84bb%3A0x94aac92d174f98a7!2sGoianinha%2C%20RN%2C%2059173-000!5e0!3m2!1spt-BR!2sbr!4v1573309212861!5m2!1spt-BR!2sbr" width="100%" height="600px" frameborder="0" style="border:0;" allowfullscreen="true"></iframe><br><br>
       <div class="container wow fadeInUp">
         <div class="row justify-content-center">
           <div class="col-lg-4 col-md-4">
             <div class="info">
               <div><i class="fa fa-map-marker"></i>
-                <p>R. Coronel Miguel Arcanjo Galvão, 1950 - Lagoa Nova - Natal/RN<br>Brasil, BR</p>
+                <p>Nome da sua  - Nome do bairo - Nome da cidade/RN<br>Brasil, BR</p>
               </div>
               <div><i class="fa fa-envelope"></i>
-                <p>wendelleloi2@gmail.com</p>
+                <p>SeuEmail@email.com</p>
               </div>
               <div><i class="fa fa-phone"></i>
-                <p>+55 (84) 994578751</p>
-              </div>
-              <div><i class="fa fa-phone"></i>
-                <p>+55 (84) 994578751</p>
+                <p>+55 (84) 9999999</p>
               </div>
             </div>
-            <div class="social-links"><a class="twitter" href="https://www.google.com/search?sxsrf=ACYBGNRV9wYl_-5bvdxyqBM07t5TRDPsFQ%3A1573309159742&amp;ei=58rGXbWELfKz5OUP5b6cwA8&amp;q=wendell+eloi+da+silva&amp;oq=wendell+eloi+da+silva&amp;gs_l=psy-ab.3..33i160.1002.4327..4496...0.6..0.485.4818.2-18j0j1......0....1..gws-wiz.......0i71j35i39j0j0i67j0i131i67j0i131j0i10j0i203j0i10i203.sWVNYHNHLKo&amp;ved=0ahUKEwj1k9qsqd3lAhXyGbkGHWUfB_gQ4dUDCAs&amp;uact=5" target="_blank"><i class="fa fa-twitter"></i></a><a class="facebook" href="https://www.facebook.com/wendell.eloidasilva" target="_blank"><i class="fa fa-facebook"></i></a><a class="instagram" href="https://www.instagram.com/wendell_eloi/" target="_blank"><i class="fa fa-instagram"></i></a><a class="linkedin" href="https://www.linkedin.com/in/wendell-eloi-1a5324168/" target="_blank"><i class="fa fa-linkedin"></i></a></div>
+            <div class="social-links"><a class="twitter" href="https://www.google.com/" target="_blank"><i class="fab fa-twitter"></i></a><a class="facebook" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a><a class="instagram" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a><a class="linkedin" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></div>
             <form action="">
               <div class="input-group mb-3 newsletter">
                 <h2>Newsletter</h2>
@@ -129,23 +122,17 @@
     </section>
     <footer id="footer">
       <div class="container">
-        <div class="copyright">© Copyright <strong>Base Sites</strong>. Todos os direitos reservados.</div>
-        <div class="credits">Projetado por <a href="https://github.com/wendelleloi" target="_blank">Wendell Eloi</a></div>
+        <div class="copyright">© Copyright <strong>Landing page basic II</strong>. Todos os direitos reservados.</div>
+        <div class="credits">Projetado por <a href="#" target="_blank">TecHay</a></div>
       </div>
     </footer>
-    <!-- Botão voltar para o topo FINALIZADO--><a class="back-to-top" href="#"><i class="fa fa-chevron-up"></i></a>
-    <!-- Libraries JS-->
-    <script>
-      //- app.use("/js", express.static(path.join(__dirname, "js")))
-      //- app.use(express.static(__dirname + '/js'));
-    </script>
-    <script src="/lib/jquery/jquery.min.js"></script>
-    <script src="/lib/jquery/jquery-migrate.min.js"></script>
-    <script src="/lib/easing/easing.min.js"></script>
-    <script src="/lib/wow/wow.min.js"></script>
-    <script src="/lib/waypoints/waypoints.min.js"></script>
-    <script src="/lib/superfish/hoverIntent.js"></script>
-    <script src="/lib/superfish/superfish.min.js"></script>
-    <script src="/js/main.js"></script>
+    <!-- Botão voltar para o topo FINALIZADO--><a class="back-to-top" id="back-to-top" href="#" onclick="topFunction()"><i class="fa fa-chevron-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

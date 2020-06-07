@@ -1,244 +1,161 @@
-// .contato {
-// 	margin-top: 120px;
-// 	margin-bottom: 120px;
-// 	@include d(s) {
-// 		margin-top: 60px;
-// 		margin-bottom: 60px;
-// 	}
-// }
-
-// .contato form {
-// 	label {
-// 		@include tipo-1(18);
-// 		display: block;
-// 	}
-// 	input[type="text"], textarea {
-// 		@include tipo-1(18);
-// 		color: $cinza;
-// 		width: 100%;
-// 		padding: 0 5px;
-// 		height: 40px;
-// 		border: 2px solid $bege-escuro;
-// 		background: transparent;
-// 		margin-bottom: 1em;
-// 		&:hover, &:focus {
-// 			outline: none;
-// 			border-color: $bege-medio;
-// 		}
-// 	}
-// 	textarea {
-// 		height: 120px;
-// 	}
-// }
-
-// input.button {
-// 	@include tipo-1(18);
-// 	cursor: pointer;
-// 	color: $bege-escuro;
-// 	text-transform: uppercase;
-// 	border: 2px solid $bege-escuro;
-// 	background: transparent;
-// 	display: block;
-// 	width: 200px;
-// 	padding-top: 5px;
-// 	@include box-shadow(5px 5px 0 -2px $bege-medio,
-// 											5px 5px 0 0 $bege-escuro);
-// 	transition: .3s;
-// 	&:hover {
-// 		@include box-shadow(3px 3px 0 -2px $bege-medio,
-// 											3px 3px 0 0 $bege-escuro);
-// 	}
-// }
-
-
-// .contato-info {
-// 	display: inline-block;
-// 	color: $bege-escuro;
-// 	margin-top: 2em;
-// 	margin-bottom: 3em;
-// 	@include d(l) {
-// 		float: right;
-// 		text-align: right;
-// 		margin-top: -3em;
-// 	}
-// }
-
-// .contato-mapa {
-// 	display: block;
-// 	@include box-shadow(0 0 0 10px $bege-medio);
-// 	clear: both;
-// 	img {
-// 		width: 100%;
-// 	}
-// }
-
+/*news letter*/
+/* Style the input elements and the submit button */
+/* Style the submit button */
 #contact {
-	background:var(--background-geral);
+	background: var(--background-geral);
 	padding: 80px 0 40px 0;
 	margin-top: -50px;
+	#google-map {
+		height: 300px;
+		margin-bottom: 20px;
+	}
+	.info {
+		color: #595959;
+		i {
+			font-size: 32px;
+			color: #33b8e5;
+			float: left;
+		}
+		p {
+			padding: 0 0 10px 50px;
+			margin-bottom: 20px;
+			line-height: 22px;
+			font-size: 17px;
+		}
+		.email {
+			p {
+				padding-top: 5px;
+			}
+		}
+	}
+	.social-links {
+		padding-bottom: 20px;
+		a {
+			font-size: 18px;
+			display: inline-block;
+			background: #595959;
+			color: #fff;
+			line-height: 1;
+			padding: 8px 0;
+			border-radius: 50%;
+			text-align: center;
+			width: 36px;
+			height: 36px;
+			transition: 0.3s;
+			margin: 0 10px;
+			@media screen and (max-width: 768px) {
+                margin: 0 5px;
+			}
+			&:hover {
+				background: #33b8e5;
+				color: #fff;
+			}
+		}
+	}
+	.form {
+		#sendmessage {
+			color: #33b8e5;
+			display: none;
+			text-align: center;
+			padding: 15px;
+			font-weight: 600;
+			margin-bottom: 15px;
+		}
+		#errormessage {
+			color: red;
+			display: none;
+			border: 1px solid red;
+			text-align: center;
+			padding: 15px;
+			font-weight: 600;
+			margin-bottom: 15px;
+		}
+		#sendmessage.show {
+			display: block;
+		}
+		#errormessage.show {
+			display: block;
+		}
+		.show {
+			display: block;
+		}
+		.validation {
+			color: red;
+			display: none;
+			margin: 0 0 20px;
+			font-weight: 400;
+			font-size: 16px;
+		}
+		input {
+			border-radius: 0;
+			box-shadow: none;
+			font-size: 16px;
+		}
+		textarea {
+			border-radius: 0;
+			box-shadow: none;
+			font-size: 16px;
+		}
+		button[type="submit"] {
+			background: #33b8e5;
+			border: 0;
+			padding: 10px 24px;
+			color: #fff;
+			transition: 0.4s;
+			cursor: pointer;
+			&:hover {
+				background: #33b8e5;
+				cursor: pointer;
+			}
+		}
+	}
 }
-
-#contact #google-map {
-	height: 300px;
-	margin-bottom: 20px;
-}
-
-#contact .info {
-	color: #595959;
-}
-
-#contact .info i {
-	font-size: 32px;
-	color: #33b8e5;
-	float: left;
-}
-
-#contact .info p {
-	padding: 0 0 10px 50px;
-	margin-bottom: 20px;
-	line-height: 22px;
-	font-size: 17px;
-}
-
-#contact .info .email p {
-	padding-top: 5px;
-}
-
-#contact .social-links {
-	padding-bottom: 20px;
-}
-
-#contact .social-links a {
-	font-size: 18px;
-	display: inline-block;
-	background: #595959;
-	color: #fff;
-	line-height: 1;
-	padding: 8px 0;
-	border-radius: 50%;
-	text-align: center;
-	width: 36px;
-	height: 36px;
-	transition: 0.3s;
-}
-
-#contact .social-links a:hover {
-	background: #33b8e5;
-	color: #fff;
-}
-
-#contact .form #sendmessage {
-	color: #33b8e5;
-	border: 1px solid #33b8e5;
-	display: none;
-	text-align: center;
-	padding: 15px;
-	font-weight: 600;
-	margin-bottom: 15px;
-}
-
-#contact .form #errormessage {
-	color: red;
-	display: none;
-	border: 1px solid red;
-	text-align: center;
-	padding: 15px;
-	font-weight: 600;
-	margin-bottom: 15px;
-}
-
-#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
-	display: block;
-}
-
-#contact .form .validation {
-	color: red;
-	display: none;
-	margin: 0 0 20px;
-	font-weight: 400;
-	font-size: 16px;
-}
-
-#contact .form input, #contact .form textarea {
-	border-radius: 0;
-	box-shadow: none;
-	font-size: 16px;
-}
-
-#contact .form button[type="submit"] {
-	background: #33b8e5;
-	border: 0;
-	padding: 10px 24px;
-	color: #fff;
-	transition: 0.4s;
-	cursor: pointer;
-}
-
-#contact .form button[type="submit"]:hover {
-	background: #33b8e5;
-	cursor: pointer;
-}
-
-/*news letter*/
-
-form {
-	border: 4px solid #f1f1f1;
-}
-
-.newsletter{
-		border: solid 1px black;
-		padding: 10px;
+.newsletter {
+	input[type=email] {
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+	}
+	input {
+		min-height: 40px;
+	}
+	h2 {
+		display: block;
+	}
 }
-
-.newsletter input[type=email], button {
+button {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
-	
+	min-height: 40px;
 }
-
-.newsletter:hover input[type=email]{
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.newsletter:hover button{
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Style the input elements and the submit button */
- input[type=email], input[type=submit] {
+input[type=email] {
 	width: 100%;
 	padding: 12px;
- 
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
 	cursor: pointer;
 }
-
-.newsletter input, button{
-	min-height: 40px;
- 
-}
-.newsletter h2, p{
-	display: block;
- 
-}
-
-/* Style the submit button */
 input[type=submit] {
+	width: 100%;
+	padding: 12px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	cursor: pointer;
 	background-color: #33b8e5;
 	color: white;
 	border: none;
-}
-
-input[type=submit]:hover {
-	opacity: 0.8;
-}
-
-@media (max-width: 500px) {
-	.newsletter p{
-		 margin-right: 100px;
+	&:hover {
+		opacity: 0.8;
 	}
- 
+}
+p {
+	display: block;
+}
+@media (max-width: 500px) {
+	.newsletter {
+		p {
+			margin-right: 100px;
+		}
+	}
 }

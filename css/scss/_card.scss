@@ -29,6 +29,9 @@
 
 .card .social a {
   color: #b3b3b3;
+  &:nth-child(even) {
+    margin: 0 10px;
+  }
 }
 
 .card .social a:hover {

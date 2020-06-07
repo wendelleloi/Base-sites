@@ -1,37 +1,57 @@
-
-#nav-menu-container-top
-  ul.nav-menu-top
-    li
-      a.btn-calcule-nav(href='https://github.com/wendelleloi', target='_blank') Calcule sua parcela
-    li
-      a.btn-zap-nav(href='http://api.whatsapp.com/send?1=pt_BR&phone=5584994578751', target='_blank')
-        i.fab.fa-whatsapp
-nav#nav-menu-container
-  ul.nav-menu
-    li.menu-active
-      a(href='#cab') Início
-    li.menu-has-children
-      a(href='#sobre') Quem somos
-      ul
-        li
-          a(href='#depoimentos') Depoimentos
-        li
-          a(href='#team') Equipe
-        li
-          a(href='#parceiros') Parceiros e Clientes
-        li
-          a(href='#apoio') Apoio e convênios
-        li
-          a(href='#noticias') Notícias
-    li.menu-has-children
-      a(href='#perfil-representantes') Perfil de representantes
-      ul
-        li
-          a.modBtn1(href='#') Seja um representante
-    li
-      a(href='#services') Áreas de atuação
-    li
-      a(href='#contact') Localização e contato
+// The overlay
+#myNav.overlay
+  // Button to close the overlay navigation
+  a.closebtn(href='javascript:void(0)' onclick='closeNav()') &times;
+  // Overlay content
+  .overlay-content
+    a(href='#') Início
+    a(href='#sobre') Sobre Nós
+    a(href='#galeria') Galeria
+    a(href='#localizacao') Localização
+    a(href="#team") Time
+    a(href='#contact') Contato
+    .dropdown#paletas
+      button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        | Paletas
+      .dropdown-menu(aria-labelledby='dropdownMenuButton')
+        a.dropdown-item.paleta(href='#' onclick='paleta("verde")') Paleta verde
+        a.dropdown-item.paleta(href='#' onclick='paleta("azul")') Paleta azul
+.overlay-nav.scroll-overlay
+  span(onclick='openNav()').button-overlay
+    i.fas.fa-bars
+// default nav
+nav#defalt-nav.navbar.navbar-expand-lg.navbar-light
+ .collapse.navbar-collapse
+    a.navbar-brand(href='#') LOGO
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link(href='#')
+          | Início
+      li.nav-item.active
+        a.nav-link(href='#sobre')
+          | Sobre Nós
+      li.nav-item.active
+        a.nav-link(href='#galeria')
+          | Galeria
+      li.nav-item.active
+        a.nav-link(href='#localizacao')
+          | localização
+      li.nav-item.active
+        a.nav-link(href='#team')
+          | Time
+      li.nav-item.active
+        a.nav-link(href='#contact')
+          | Contato
+      li.nav-item
+        .dropdown#paletas
+            button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              | Paletas
+            .dropdown-menu(aria-labelledby='dropdownMenuButton')
+              a.dropdown-item.paleta(href='#' onclick='paleta("verde")') Paleta verde
+              a.dropdown-item.paleta(href='#' onclick='paleta("azul")') Paleta azul
+      li.nav-item
+         .button-main
+            a(href="#" title="") (84) 99499-9999
 block content
 
 
